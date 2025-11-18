@@ -1,8 +1,7 @@
 package com.TaskManager.repository;
 
-import org.springframework.stereotype.Repository;
+import com.TaskManager.model.Task;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public class TaskRepository {
-
+public interface TaskRepository extends JpaRepository<Task, Long> {
 }
