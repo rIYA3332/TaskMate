@@ -1,8 +1,8 @@
-package com.TaskManager.model;
+package com.TaskManager.TaskMate.model;
 
 import jakarta.persistence.*;
 
-@Entity
+@Entity(name = "tasks")
 public class Task {
 
     @Id
@@ -23,12 +23,15 @@ public class Task {
 
     // Getters & Setters
     public Long getId() {
+
         return id;
     }
     public String getTitle() {
+
         return title;
     }
     public void setTitle(String title) {
+
         this.title = title;
     }
 
@@ -36,13 +39,16 @@ public class Task {
         return description;
     }
     public void setDescription(String description) {
+
         this.description = description;
     }
 
     public boolean isCompleted() {
+
         return completed;
     }
-    public void setCompleted(boolean completed) {
+    public void setCompleted(boolean completed)
+    {
         this.completed = completed;
     }
 }
